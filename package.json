@@ -11,7 +11,9 @@
     "build": "webpack",
     "babel": "babel src -d dist",
     "lint": "eslint .",
-    "test": "jest --coverage"
+    "test": "jest --testPathPattern=./unit/",
+    "coverage": "jest --testPathPattern=./unit/ --coverage",
+    "e2e": "jest --testPathPattern=./e2e/"
   },
   "repository": {
     "type": "git",
@@ -32,6 +34,7 @@
     "html-webpack-plugin": "^4.0.4",
     "jest": "^25.2.7",
     "mini-css-extract-plugin": "^0.9.0",
+    "puppeteer": "^2.1.1",
     "push-dir": "^0.4.1",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",

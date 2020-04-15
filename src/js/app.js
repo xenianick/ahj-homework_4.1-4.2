@@ -55,10 +55,13 @@ validatorInput.addEventListener('input', () => {
 
 // проверка номера карты по сабмиту формы
 validatorForm.addEventListener('submit', (event) => {
+  validatorInput.className = 'validator_input';
   const isValidated = luhnAlgorithm(validatorInput.value);
   if (isValidated) {
+    validatorInput.classList.add('valid');
     symbolOk.classList.remove('hide');
   } else {
+    validatorInput.classList.add('invalid');
     symbolDismiss.classList.remove('hide');
   }
   event.preventDefault();
