@@ -1,0 +1,68 @@
+.validator-container {
+  position: relative;
+  width: 420px;
+  margin: 0 auto;
+}
+.cards-icons-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 420px;
+}
+.card-icon-container {
+  width: 40px;
+  height: 25px;
+  margin: 0 5px 5px 0;
+  background-size: cover;
+  border: 1px solid #c0c0c0;
+  border-radius: 3px;
+}
+.card-icon-container img {
+  width: 100%;
+}
+.card-icon-container:last-of-type {
+  margin-right: 0;
+}
+.symbols-wrapper {
+  display: flex;
+  position: absolute;
+  left: 10px;
+  bottom: -8px;
+}
+.symbol-ok {
+  color: green;
+}
+.symbol-dismiss {
+  color: red;
+}
+.validator_form {
+  display: flex;
+  width: 420px;
+  justify-content: space-between;
+}
+.validator_input {
+  box-sizing: border-box;
+  width: 285px;
+  height: 35px;
+  font-size: 14px;
+  padding: 0 25px;
+}
+.validator_btn {
+  box-sizing: border-box;
+  width: 125px;
+  height: 35px;
+  border: 0px;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #4abc00;
+  cursor: pointer;
+}
+.validator_btn p {
+  margin: 0;
+}
+.disable {
+  opacity: 0.2;
+}
+.hide {
+  display: none;
+}
